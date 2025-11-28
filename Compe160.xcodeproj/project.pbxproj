@@ -26,6 +26,7 @@
 		AD0FBEE02E6A50650068C949 /* Exceptions for "Compe160Lab" folder in "Compe160" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				"Bonus Assignment/Bonus.cpp",
 				Lab1/lab1_q1.cpp,
 				Lab1/lab1_q2.cpp,
 				Lab1/lab1_q3.cpp,
@@ -46,6 +47,10 @@
 				Lab9/lab9_q1.cpp,
 				Lab9/lab9_q2.cpp,
 				Lab10/lab10_q1.cpp,
+				Lab10/lab10_q2.cpp,
+				Lab11/lab11_q1.cpp,
+				Lab11/lab11_q2.cpp,
+				Lab12/lab12_q2.cpp,
 				main.cpp,
 			);
 			target = ADE8D6422E5F942F007DC5C7 /* Compe160 */;

@@ -8,23 +8,23 @@
 #include <iostream>
 using namespace std;
 
-double square(double x)
-{
-    return x * x;
-}
+struct User{
+    
+    int age;
+    string name;
+    
+};
 
-int cube(int x)
-{
-    return x * x * x;
-}
 
 int main()
 {
-    double* f(double);
-    double (*p)(double);
-    double *h;
+    User user1;
     
-    p = 0;
-    p = square;
-    return 0;
+    cout << "What is your age: ";
+    cin >> user1.age;
+    
+    cout << "What is your name: ";
+    cin >> user1.name;
+    
+    cout << user1.age << ", " << user1.name << endl;
 }
