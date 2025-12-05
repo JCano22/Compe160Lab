@@ -4,9 +4,11 @@ using namespace std;
 
 int main()
 {
-    double temp = 22.2;
+    double cTemp = 50;
+    double fTemp = 96.7;
 
-    cout << "Temp in C: " << CelsiusToFahrenheit(temp) << endl;
+    cout << "Temp in C: " << CelsiusToFahrenheit(cTemp) << endl;
 
+    cout << "Temp in C: " << FahrenheitToCelsius(fTemp) << endl;
     return 0;
 }
