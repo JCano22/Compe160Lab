@@ -50,7 +50,10 @@
 				Lab10/lab10_q2.cpp,
 				Lab11/lab11_q1.cpp,
 				Lab11/lab11_q2.cpp,
+				Lab12/lab12_q1.cpp,
 				Lab12/lab12_q2.cpp,
+				Lab13/lab13_q1.cpp,
+				Lab13/lab13_q2.cpp,
 				main.cpp,
 			);
 			target = ADE8D6422E5F942F007DC5C7 /* Compe160 */;
