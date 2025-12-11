@@ -2,25 +2,33 @@
 
 int main() {
 
-    // Open file for read/write (in-place modification)
     FILE* fp = fopen("text.txt", "r+");
     if (!fp) {
         printf("Error: cannot open text.txt\n");
         return 1;
     }
 
+    char buffer[10000]; 
+    int len = 0;
     int ch;
+
     while ((ch = fgetc(fp)) != EOF) {
+        buffer[len++] = ch;
+    }
 
-        // Check if vowel
-        if (ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u' ||
-            ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U') {
+    
+    fclose(fp);
+    fp = fopen("text.txt", "w");   
 
-            // Move pointer back 1 byte
-            fseek(fp, -1, SEEK_CUR);
+    
+    for (int i = 0; i < len; i++) {
+        char c = buffer[i];
 
-            // Overwrite with '*'
+        if (c=='a'||c=='e'||c=='i'||c=='o'||c=='u'||
+            c=='A'||c=='E'||c=='I'||c=='O'||c=='U') {
             fputc('*', fp);
+        } else {
+            fputc(c, fp);
         }
     }
 
