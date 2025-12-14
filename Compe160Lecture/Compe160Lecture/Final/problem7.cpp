@@ -9,6 +9,13 @@ int main()
 
     cout << "Enter a positive number: ";
     cin >> num;
-
-    
+	
+	int r;
+	
+	r = num & (8 - 1);
+	if (r == 0)
+		cout << "Yes" << endl;
+	else
+		cout << "No" << endl;							
+	
 }
